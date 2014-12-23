@@ -1,0 +1,374 @@
+#container{width:1000px;height:200px;margin: auto auto auto auto;}
+body {
+margin: 0;
+padding: 0;
+background: #FFFFFF url(images/img01.jpg);
+font: normal small Georgia, "Times New Roman", Times, serif;
+line-height: 1.8em;
+color: #797C7A;
+}
+
+h1, h2, h3 {
+margin: 0;
+padding: 0;
+color: #715558;
+}
+
+h3 {
+margin-bottom: 1em;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: .9em;
+font-weight: bold;
+}
+
+p, ul, ol {
+margin-top: 0;
+}
+
+/*categorise*/
+a {
+text-decoration: none;
+color: #5A5C53;
+}
+
+a:hover {
+background: none;
+text-decoration: underline;
+}
+
+/* Wrapper */
+#wrapper {
+background: #FFFFFF url(images/img02.jpg) repeat-x left top;
+}
+
+/* Menu */
+#menu {
+width: 600px;
+height: 60px;
+margin: 0 auto;
+background: url(images/img03.jpg) no-repeat right top;
+}
+
+#menu ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+#menu li {
+display: block;
+float: left;
+width: 148px;
+height: 60px;
+padding: 0 0 0 2px;
+}
+
+#menu a {
+display: inline-block;
+width: 108px;
+height: 36px;
+padding: 20px 20px 0 20px;
+background: url(image/img01.jpg) no-repeat;
+letter-spacing: -1px;
+text-align: center;
+font-size: 1.6em;
+color: #FFFFFF;
+}
+
+#menu a:hover {
+color:gold;
+font-size:20px;
+}
+
+/* Header */
+#header {
+width: 754px;
+height: 250px;
+margin: 0 auto;
+padding: 13px 0 0 0;
+}
+
+#header h1 {
+float: left;
+width: 150px;
+height: 50px;
+padding: 200px 50px 0 25px;
+background: url(images/logo.png) no-repeat;
+line-height: 32px;
+font-size: 12px;
+font-style: italic;
+text-align:center;
+color: #715558;
+}
+
+#header h2 {
+float: right;
+width: 460px;
+height: 50px;
+padding: 180px 20px 0 0;
+background: url(images/img05.jpg) no-repeat;
+text-align: right;
+letter-spacing: -1px;
+font-size: 22px;
+font-weight: normal;
+font-style: italic;
+color: #FFFFFF;
+}
+
+/* Content */
+#content {
+width: 750px;
+margin: 0 auto;
+}
+
+.content-isi{
+margin-left:20px;
+list-style:none;
+}
+
+/* Posts */
+#posts {
+float: right;
+width: 510px;
+}
+
+#posts .post {
+padding-bottom: 30px;
+}
+
+#posts .story {
+padding: 15px 20px 0 20px;
+background: url(images/img08.jpg) repeat-x;
+}
+
+/* Links */
+#links {
+float: left;
+width: 220px;
+}
+
+#links ul {
+margin: 0;
+padding: 0;
+}
+
+#links li ul {
+padding: 15px 20px 30px 20px;
+background: url(images/img08.jpg) repeat-x;
+}
+
+#links li a {
+background: none;
+}
+
+#links h2 {
+font-size: 1.3em;
+}
+
+
+/*gallery*/
+#gallery{
+weight:1000px;
+padding-left:20px;
+padding-right:20px;
+background-color:#FFFFFF;
+}
+
+#gallerycontent{
+padding-left:270px;
+height:250px;
+}
+/*slider*/
+#box {
+	text-align: left;
+	width: 150px;
+	margin: 5px auto 0 auto;
+	background-color: #000;
+	overflow: hidden;
+	border: 5px solid #000;
+	-webkit-box-shadow: #131313 0px 2px 10px;
+	-moz-box-shadow: #131313 0px 3px 10px;
+	box-shadow: #131313 0px 3px 10px;	
+	-webkit-animation-name: fadeIn; 
+  	-webkit-animation-duration: 3s; 
+  	-webkit-animation-iteration-count: 1;
+  	-webkit-animation-delay: 0s;
+	float:left;
+	margin-left:100px;
+}
+
+ul#slider{
+	-webkit-border-radius: 10px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	position: relative;
+	height: 160px;
+	overflow: hidden;	
+}
+
+ul#thumb {
+	overflow: none;
+	margin: 0px 0px 0px 0px;
+	padding: 1px;
+	list-style: none;
+	position: relative;
+	background: #000;
+	overflow: auto;
+}
+
+ul#thumb a {
+	-webkit-transition: opacity .2s ease-in-out;
+	border: 1px solid #979797;
+	width: 25px;
+	height: 25px;
+	display:block;
+	float:left;
+	overflow: hidden;
+	opacity: 0.75;
+	padding:1px;
+}
+
+ul#thumb a:hover {
+	opacity: 1;
+} 
+
+ul#slider li {	
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	}
+	
+ul#slider li p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: inherit;
+	color: #fff;
+	background: rgba(0, 0, 0, .5);
+	width: 100%;
+}
+
+ul#slider li p span {
+	line-height: 1.2em;
+	padding: 10px;
+	display: block;
+}
+
+/* Animation for the :target image. Slides the image in. */
+
+@-webkit-keyframes moveTarget {
+	0% {
+		left:-700px;
+		
+	}
+	
+	100% { 
+		left:0px;
+	}
+}
+
+
+ul#slider li:target {
+	-webkit-animation-name: moveTarget; 
+	-webkit-animation-duration: .5s; 
+	-webkit-animation-iteration-count: 1;
+	top:0px;
+	left: 0px;
+	z-index: 10;
+}
+
+/*
+Animation for the current image. Slides it out the frame and back to the starting position. 
+Adds a lower z-index than the now current image.
+*/
+
+@-webkit-keyframes moveIt {
+	0% {
+		left:0px;
+		
+	}
+	50% {
+		left:700px;
+		
+	}
+	100% { 
+		left:-700px;
+		z-index: 5;
+	}
+}
+
+ul#slider li:not(:target) {
+	-webkit-animation-name: moveIt; 
+  	-webkit-animation-duration: 1.5s; 
+  	-webkit-animation-iteration-count: 1;
+	top:0px;
+	left: 0px;
+}
+
+
+/*about*/
+#about{
+background-color:#FFFFFF;
+height:300px;
+padding-left:60px;
+padding-right:60px;
+}
+
+#about p{
+width:900px;
+}
+
+/*contact*/
+#contact{
+background-color:gray;
+font: normal small Georgia, "Times New Roman", Times, serif;
+line-height: 1.8em;
+color: #FFFFFF;
+margin:20px;
+width:95%;
+text-align:center;
+}
+
+#contact table{
+padding-left:380px;
+font: normal small Georgia, "Times New Roman", Times, serif;
+line-height: 1.8em;
+color: #FFFFFF;;
+}
+
+
+/* Footer */
+#footer {
+padding: 40px 0 60px 0;
+background: url(images/img07.jpg) repeat-x;
+}
+#c_footer{padding-top:65px;
+height:200px;
+width:1000px;
+
+}
+#footer p {
+width: 750px;
+color: #FFFFFF;
+}
+
+#footer a {
+background: none;
+font-weight: bold;
+color: #FFFFFF;
+}
+
+#legal {
+margin: 0 auto;
+text-align: right;
+font-size: 12px;
+}
+
+#brand {
+margin: -35px auto 0 auto;
+padding: 10px 0 0 0;
+letter-spacing: -1px;
+font-size: 24px;
+}
